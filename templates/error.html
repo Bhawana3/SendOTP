@@ -1,34 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Home</title>
-    <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link href="{{ url_for('static',filename='index.css') }}" rel="stylesheet" type="text/css">
-    <!-- jQuery library -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-
-    <!-- Latest compiled JavaScript -->
-    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-</head>
-<body>
-    <div class="container col-sm-12">
-        <nav class="navbar navbar-default navbar-inverse">
-          <div class="container-fluid">
-            <ul class="nav navbar-nav">
-              <li><a href="{{ url_for('views.contacts') }}">Contacts</a></li>
-              <li><a href="{{ url_for('views.messages') }}">Messages</a></li>
-              <li><a href="{{ url_for('views.add') }}">Add Contact</a></li>
-            </ul>
-          </div>
-        </nav>
-    </div>
+{% extends 'base.html' %}
+{% block title %}Error{% endblock %}
+{% block body%}
     <div class="row">
         <div class="col-sm-6 col-xs-12 col-sm-offset-1">
             SOMETHING WENT WRONG.
         </div>
     </div>
-
-</body>
-</html>
+{% endblock %}
