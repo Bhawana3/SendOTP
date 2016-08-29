@@ -25,7 +25,7 @@ db = SQLAlchemy(app)
 CORS(app)
 
 def register_blueprints(app):
-    from sendOTPApp.views import views
+    from .views import views
     app.register_blueprint(views)
 
 register_blueprints(app)

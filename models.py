@@ -1,4 +1,4 @@
-from sendOTPApp import db, Session
+from . import db, Session
 from datetime import datetime
 
 

@@ -1,6 +1,6 @@
 from flask import Blueprint, render_template, request
 from flask.views import MethodView
-from sendOTPApp.models import Contacts, Messages
+from .models import Contacts, Messages
 
 
 views = Blueprint ("views", __name__, template_folder='templates')
