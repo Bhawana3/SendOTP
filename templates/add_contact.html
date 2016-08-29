@@ -1,0 +1,13 @@
+<link href="{{ url_for('static',filename='add_contact.css') }}" rel="stylesheet" type="text/css">
+{% extends 'base.html' %}
+{% block title %}Add Contact{% endblock %}
+{% block body%}
+    <div class="col-sm-4 col-xs-12 col-sm-offset-4">
+    <form method="post" action="{{ url_for('views.add') }}">
+        <input type="text" name="firstname" placeholder="First Name" required/>
+        <input type="text" name="lastname" placeholder="Last Name" required/>
+        <input type="text" name="number" placeholder="Number" required/>
+        <input class="btn btn-info submit" type="submit" value="Add">
+    </form>
+    </div>
+{% endblock %}

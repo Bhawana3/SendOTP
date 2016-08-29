@@ -1,0 +1,19 @@
+.container-block{
+    border-bottom: solid 1px #00BCD4;
+    padding: 2%;
+    text-align: center;
+    font-size: 15px;
+    color: #221F1F;
+
+}
+p{
+    word-wrap: break-word;
+}
+p:first-child{
+    font-weight: 600;
+    font-size: 20px;
+    color: #00BCD4;
+    }
+p:nth-child(2){
+    color: #8D8D96;
+}

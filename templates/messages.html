@@ -1,0 +1,13 @@
+<link href="{{ url_for('static',filename='messages.css') }}" rel="stylesheet" type="text/css">
+{% extends 'base.html' %}
+{% block title %}Sent Message{% endblock %}
+{% block body %}
+    {% for message in messages %}
+        <div class="col-sm-6 col-xs-12 col-sm-offset-3 container-block">
+            <p>{{ message.Contacts.firstname }} {{ message.Contacts.lastname }}</p>
+            <p>{{ message.Messages.timestamp }}</p>
+            <p>Phone Numbers: {{ message.Contacts.number }}</p>
+            <p>Msg: {{ message.Messages.msg }} </p>
+        </div>
+    {% endfor %}
+{% endblock %}

@@ -1,0 +1,14 @@
+<link href="{{ url_for('static',filename='edit.css') }}" rel="stylesheet" type="text/css">
+{% extends 'base.html' %}
+{% block title %}Add Contact{% endblock %}
+{% block body%}
+    <div class="col-sm-12 col-xs-12">
+    <form method="post" action="{{ url_for('views.send') }}">
+        <input type="hidden" name="id" value="{{ id }}"/>
+        <input type="hidden" name="number" value="{{ number }}"/>
+        <input type="hidden" name="otp" value="{{ otp }}"/>
+        <input class="col-sm-12 input" type="text" name="msg" value="{{ msg }}" required/>
+        <input class="btn btn-info submit" type="submit" value="Send Message">
+    </form>
+    </div>
+{% endblock %}

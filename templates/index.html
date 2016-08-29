@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+{% block title %}Contacts{% endblock %}
+{% block body %}
+    {% for contact in contacts_list %}
+    <div class="row col-sm-6 col-xs-12 col-sm-offset-1">
+        <div class="col-sm-12"><a href="{{ url_for('views.detail', id=contact.id) }}">{{ contact.firstname }} {{ contact.lastname }}</a></div>
+    </div>
+    {%  endfor %}
+{% endblock %}
