@@ -1,6 +1,6 @@
-Sending OTP message to the given mobile number
+Send OTP message to the given mobile number
 ==============================================
-An Flask application to send OTP to all the contact list available using Plivo.
+A Flask application to send OTP to all the contact list available using Plivo.
 
 The Application used Python-Flask and MySQL Database.
 
