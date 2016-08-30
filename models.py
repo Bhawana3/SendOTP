@@ -7,8 +7,6 @@ class Contacts(db.Model):
     firstname = db.Column(db.String(50))
     lastname = db.Column(db.String(50))
     number = db.Column(db.String(10), unique=True)
-    messages = db.relationship('Messages', backref='contacts',
-                                uselist=False)
 
     def __init__(self, number, firstname=None, lastname=None):
     	self.number = number
